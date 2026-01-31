@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://fdki14lodt6h"]
+
+[ext_resource type="Script" uid="uid://6u6bqfsfoxm5" path="res://audio/audio_test_scene/audio_test_scene.gd" id="1_2dhws"]
+[ext_resource type="Theme" uid="uid://e0mqpl0l5i67" path="res://ui/MainTheme.tres" id="1_e4f5f"]
+[ext_resource type="Script" uid="uid://b5xb3ymewyhyn" path="res://audio/audio_test_scene/play_sound_button.gd" id="2_7urmg"]
+[ext_resource type="AudioStream" uid="uid://dh7sk6g51i6hg" path="res://audio/sfx/789219__modusmogulus__dusty-cash-register-cash-machine-ii.wav" id="3_45dkv"]
+[ext_resource type="AudioStream" uid="uid://d1cowqj5epykc" path="res://audio/music/Song-1-loop.mp3" id="4_i0ogl"]
+[ext_resource type="AudioStream" uid="uid://nu0l261s6883" path="res://audio/sfx/795349__geoff-bremner-audio__paper-rip-8.wav" id="4_orxxl"]
+[ext_resource type="AudioStream" uid="uid://b50sxnm5tpn8v" path="res://audio/sfx/323741__reitanna__mouth-pop.wav" id="5_xr47p"]
+
+[node name="TestScene" type="Control" unique_id=1215804574]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_e4f5f")
+script = ExtResource("1_2dhws")
+
+[node name="Button" type="Button" parent="." unique_id=1154726411]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 19.0
+offset_right = 130.0
+offset_bottom = 65.0
+text = "Success"
+script = ExtResource("2_7urmg")
+sound = ExtResource("3_45dkv")
+
+[node name="Button4" type="Button" parent="." unique_id=93326420]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 19.0
+offset_right = 297.0
+offset_bottom = 65.0
+text = "🎶 Music"
+script = ExtResource("2_7urmg")
+sound = ExtResource("4_i0ogl")
+
+[node name="Button2" type="Button" parent="." unique_id=918159911]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 83.0
+offset_right = 127.0
+offset_bottom = 129.0
+text = "Money"
+script = ExtResource("2_7urmg")
+sound = ExtResource("4_orxxl")
+variation = true
+
+[node name="Button3" type="Button" parent="." unique_id=45027871]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 156.0
+offset_right = 126.0
+offset_bottom = 202.0
+text = "pop"
+script = ExtResource("2_7urmg")
+sound = ExtResource("5_xr47p")
+variation = true
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button4" to="Button4" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

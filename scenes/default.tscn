@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b2snd1i8162fk"]
+
+[ext_resource type="PackedScene" uid="uid://1f2hj4cn0ypi" path="res://scenes/wheel_reader/wheel_reader.tscn" id="1_7vjpr"]
+[ext_resource type="Script" uid="uid://cnagpsyr2akor" path="res://scenes/game_loop.gd" id="1_nvwnn"]
+[ext_resource type="PackedScene" uid="uid://c5f5cduc8rhrm" path="res://ui/GUI.tscn" id="2_7vjpr"]
+[ext_resource type="PackedScene" uid="uid://dwlp46vgaaq7x" path="res://scenes/gameplay/gameplay.tscn" id="4_ya6ni"]
+
+[node name="GameLoop" type="Node" unique_id=815587267]
+script = ExtResource("1_nvwnn")
+initial_delay = 0.0
+item_change_interval = 2.5
+shopping_list_length = 2
+
+[node name="WheelReader" parent="." unique_id=1772671417 instance=ExtResource("1_7vjpr")]
+
+[node name="Gameplay" parent="." unique_id=529426917 instance=ExtResource("4_ya6ni")]
+
+[node name="GUI" parent="." unique_id=383544712 instance=ExtResource("2_7vjpr")]

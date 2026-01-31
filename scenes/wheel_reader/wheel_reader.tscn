@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://1f2hj4cn0ypi"]
+
+[ext_resource type="Script" uid="uid://cky2e2v7b0y3p" path="res://scenes/wheel_reader/wheel_reader.gd" id="1_4n5eo"]
+
+[sub_resource type="Curve" id="Curve_7vjpr"]
+_limits = [0.0, 20.0, 0.0, 20.0]
+_data = [Vector2(0, 0), 0.0, 3.130725, 0, 0, Vector2(0.7058824, 6.515705), 0.96859014, 0.96859014, 0, 0, Vector2(9.490197, 13.162893), 0.3363162, 0.3363162, 0, 0, Vector2(20, 20), 0.3926723, 0.0, 0, 0]
+point_count = 4
+
+[node name="WheelReader" type="Control" unique_id=1772671417]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4n5eo")
+speed_curve = SubResource("Curve_7vjpr")
+
+[node name="Timer" type="Timer" parent="." unique_id=273801869]
+wait_time = 0.3
+one_shot = true

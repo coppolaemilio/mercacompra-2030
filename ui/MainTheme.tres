@@ -1,0 +1,30 @@
+[gd_resource type="Theme" format=3 uid="uid://e0mqpl0l5i67"]
+
+[ext_resource type="FontFile" uid="uid://biw6ohfe8llbi" path="res://ui/font/NerkoOne/NerkoOne-Regular.ttf" id="1_6hc0o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kyl4n"]
+bg_color = Color(0, 0, 0, 0.11764706)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.09019608, 0.12156863, 0.1764706, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6hc0o"]
+bg_color = Color(0.39887446, 0.819529, 0.5338813, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0, 0.5764706, 0.25882354, 1)
+corner_radius_top_left = 20
+corner_radius_bottom_left = 20
+
+[resource]
+default_font = ExtResource("1_6hc0o")
+default_font_size = 29
+ProgressBar/styles/background = SubResource("StyleBoxFlat_kyl4n")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_6hc0o")
