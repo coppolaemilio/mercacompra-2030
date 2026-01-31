@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://e0mqpl0l5i67" path="res://ui/MainTheme.tres" id="1_u6aah"]
 [ext_resource type="Script" uid="uid://irl6xptxonlu" path="res://ui/time_left.gd" id="2_drfbj"]
+[ext_resource type="Script" uid="uid://b37jru5g3otjk" path="res://ui/gui.gd" id="2_fp0vq"]
 [ext_resource type="Script" uid="uid://xo5k615ol717" path="res://ui/progress_bar.gd" id="2_mm8xl"]
 [ext_resource type="Texture2D" uid="uid://d23t7sgohxf8v" path="res://ui/fondo_jam.png" id="2_qlb01"]
 [ext_resource type="FontFile" uid="uid://bh5k2v04n8dbo" path="res://ui/font/Syne_Mono/SyneMono-Regular.ttf" id="3_r06dj"]
@@ -92,6 +93,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_u6aah")
+script = ExtResource("2_fp0vq")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=648883274]
 modulate = Color(0.52708346, 0.52708346, 0.52708346, 1)
