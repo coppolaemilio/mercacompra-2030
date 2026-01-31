@@ -19,5 +19,7 @@ func show_ticket():
 
 # TESTING ONLY:
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_just_pressed("ui_up"):
 		show_ticket()
+	if Input.is_action_just_pressed("ui_down"):
+		positive_feedback()
